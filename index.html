@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="description" content="Second homework" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=DM+Sans:opsz,wght@9..40,400;9..40,500;9..40,700&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/modern-normalize/2.0.0/modern-normalize.min.css"
+      integrity="sha512-4xo8blKMVCiXpTaLzQSLSw3KFOVPWhm/TRtuPVc4WG6kUgjH6J03IBuG7JZPkcWMxJ5huwaBpOpnwYElP/m6wg=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <link rel="stylesheet" href="./css/style.css" />
+    <title>Project</title>
+  </head>
+  <body>
+    <header class="header">
+      <div class="container header-container">
+        <nav class="header-nav">
+          <a href="./index.html" class="header-logo">
+            <svg class="header-svg" widht="123" height="16">
+              <use
+                href="./images/symbol-defs.svg#icon-logo"
+                class="header-use"
+              ></use>
+            </svg>
+          </a>
+          <div class="svg-photo">
+            <a href="./index.html" class="header-photo">
+              <svg class="header-photo-svg" width="20" height="16">
+                <use
+                  href="./images/symbol-defs.svg#icon-bi_camera-fill"
+                  class="photo-use"
+                ></use>
+              </svg>
+            </a>
+          </div>
+          <button
+            class="menu-toggle js-open-menu style-menu"
+            aria-expanded="false"
+            aria-controls="mobile-menu"
+          >
+            <svg class="icon menu-icon" width="42" height="32">
+              <use href="./images/symbol-defs.svg#icon-Nav"></use>
+            </svg>
+          </button>
+          <ul class="list menu">
+            <li><a href="" class="link"></a>About us</li>
+            <li><a href="" class="link"></a>Our courses</li>
+            <li><a href="" class="link"></a>Our mentors</li>
+            <li><a href="" class="link"></a>Reviews</li>
+            <li><a href="" class="link"></a>contacts</li>
+          </ul>
+        </nav>
+      </div>
+    </header>
+    <script
+      defer
+      src="https://cdnjs.cloudflare.com/ajax/libs/body-scroll-lock/3.1.5/bodyScrollLock.min.js"
+      integrity="sha512-HowizSDbQl7UPEAsPnvJHlQsnBmU2YMrv7KkTBulTLEGz9chfBoWYyZJL+MUO6p/yBuuMO/8jI7O29YRZ2uBlA=="
+      crossorigin="anonymous"
+    ></script>
+    <script defer src="js/mobile-menu.js"></script>
+  </body>
+</html>
