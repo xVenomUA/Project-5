@@ -129,11 +129,11 @@ a {
   z-index: 3;
 }
 .hero-items:nth-child(2) {
-  left: 40px;
+  left: 33px;
   z-index: 2;
 }
 .hero-items:nth-child(3) {
-  left: 80px;
+  left: 66px;
   z-index: 1;
 }
 .hero-block {
@@ -340,6 +340,17 @@ a {
     max-width: 84px;
     line-height: 1.25rem;
   }
+  .hero-items:nth-child(1) {
+    z-index: 3;
+  }
+  .hero-items:nth-child(2) {
+    left: 40px;
+    z-index: 2;
+  }
+  .hero-items:nth-child(3) {
+    left: 80px;
+    z-index: 1;
+  }
   .hero-starts {
     height: 50px;
     width: 50px;
@@ -361,6 +372,10 @@ a {
   }
   .div-strilka {
     height: 30px;
+  }
+  .menu-icon {
+    width: 52px;
+    height: 40px;
   }
 }
 /* ~~~~~~~~~~~~~~~~~~~~~~~~~
