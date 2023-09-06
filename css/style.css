@@ -1,13 +1,13 @@
 :root {
   --white: #fff;
-  --black: #000;
+  --black: #121212;
   --brown: #bea69e;
   --grey: #1d1d1d;
   --sans: "DM Sans", sans-serif;
 }
 body {
   color: white;
-  background-color: black;
+  background-color: var(--black);
   font-family: var(--sans);
 }
 *,
@@ -23,6 +23,9 @@ ul {
 img {
   display: block;
   max-width: 100%;
+}
+a {
+  text-decoration: none;
 }
 
 /* ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
@@ -127,9 +130,90 @@ img {
     border 250ms cubic-bezier(0.4, 0, 0.2, 1);
   cursor: pointer;
 }
+/* ~~~~~~~~~~~~~~~~~~~~~~~~~
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+           TABLET
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~ */
 @media screen and (min-width: 768px) {
+  .container {
+    max-width: 768px;
+    padding: 0 32px;
+  }
+  .svg-photo {
+    display: none;
+  }
+  .header-nav {
+    max-width: 504px;
+    height: 60px;
+    margin-right: 14px;
+  }
+  .header-container {
+    display: flex;
+  }
+  .header-logo {
+    margin-right: auto;
+    padding: 22px 0 22px 20px;
+  }
+  .btn-signup {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 186px;
+    height: 60px;
+    border-radius: 12px;
+    border: none;
+    background-color: var(--white);
+    cursor: pointer;
+    transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+
+    text-transform: uppercase;
+    color: var(--black);
+    font-weight: 700;
+    line-height: 1.75rem;
+    font-style: normal;
+    font-size: 18px;
+  }
+  .btn-signup:hover,
+  .btn-signup:focus {
+    color: var(--brown);
+    background-color: var(--grey);
+  }
 }
 @media screen and (min-width: 1280px) {
+  .container {
+    max-width: 1280px;
+    padding: 0 100px;
+  }
+  .header-nav {
+    max-width: 882px;
+  }
+  .list-header {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 28px;
+    margin: 0;
+    margin-right: 50px;
+  }
+  .link-nav {
+    color: var(--white);
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+    text-transform: uppercase;
+    display: block;
+    padding: 21px 0;
+    transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  }
+  .link-nav:hover,
+  .link-nav:focus {
+    color: var(--brown);
+  }
+  .btn-signup {
+    width: 238px;
+  }
 }
 @media (max-width: 1279px) {
   .menu {
@@ -138,6 +222,11 @@ img {
 }
 @media (min-width: 1280px) {
   .menu-toggle {
+    display: none;
+  }
+}
+@media (max-width: 767px) {
+  .btn-signup {
     display: none;
   }
 }
