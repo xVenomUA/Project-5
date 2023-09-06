@@ -146,14 +146,15 @@ a {
   line-height: 18px; /* 128.571% */
   letter-spacing: -0.0175rem;
   width: 67px;
-  margin-top: 48px;
+  margin-right: 4px;
 }
 .strilka {
   display: flex;
+  width: 89px;
+  height: 36px;
+  margin-top: 48px;
 }
-.div-strilka {
-  margin-top: 62px;
-}
+
 /* ~~~~~~~~~~~~~~~~~~~~~~~~~
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~
            MENU
