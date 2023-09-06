@@ -22,7 +22,6 @@ ul {
 }
 img {
   display: block;
-  max-width: 100%;
 }
 a {
   text-decoration: none;
@@ -130,18 +129,18 @@ a {
   z-index: 3;
 }
 .hero-items:nth-child(2) {
-  left: 33px;
+  left: 40px;
   z-index: 2;
 }
 .hero-items:nth-child(3) {
-  left: 66px;
+  left: 80px;
   z-index: 1;
 }
 .hero-block {
   width: 251px;
   height: 84px;
   display: flex;
-  margin-bottom: 31px;
+  margin-bottom: 30px;
 }
 .text-happy {
   font-size: 14px;
@@ -149,7 +148,7 @@ a {
   font-weight: 400;
   line-height: 18px; /* 128.571% */
   letter-spacing: -0.0175rem;
-  width: 67px;
+  max-width: 67px;
   margin-right: 4px;
 }
 .strilka {
@@ -195,6 +194,8 @@ a {
 }
 .hero-photo {
   margin: 0 auto;
+  width: 259px;
+  height: 314px;
 }
 .hero .container {
   padding-bottom: 80px;
@@ -285,7 +286,6 @@ a {
     color: var(--black);
     font-weight: 700;
     line-height: 1.75rem;
-    font-style: normal;
     font-size: 18px;
   }
   .btn-signup:hover,
@@ -293,7 +293,81 @@ a {
     color: var(--brown);
     background-color: var(--grey);
   }
+  .hero-container {
+    padding: 64px 0 0 32px;
+    width: 704px;
+    height: 900px;
+  }
+  .hero {
+    padding-bottom: 100px;
+  }
+  .main-text {
+    max-width: 517px;
+    height: 192px;
+    color: #fff;
+    font-size: 60px;
+    line-height: 4rem; /* 106.667% */
+    letter-spacing: -0.15rem;
+  }
+  .hero-text {
+    width: 418px;
+    height: 54px;
+  }
+  .hero-div-photo {
+    display: flex;
+    width: auto;
+    height: auto;
+  }
+  .strilka {
+    margin: 0 40px 0 20px;
+    display: block;
+  }
+  .divstars {
+    margin-left: 0;
+    width: 119px;
+  }
+  .hero-people-photo {
+    width: 54px;
+    height: 54px;
+  }
+  .hero-list {
+    width: 135px;
+    height: 54px;
+  }
+  .text-happy {
+    font-size: 16px;
+    line-height: 20px;
+    max-width: 84px;
+    line-height: 1.25rem;
+  }
+  .hero-starts {
+    height: 50px;
+    width: 50px;
+  }
+  .text-reviews {
+    font-size: 16px;
+    line-height: 1.25rem;
+  }
+  .hero-photo {
+    width: 353px;
+    height: 434px;
+    margin: 0 155px 0 155px;
+  }
+  .hero-block {
+    width: 418px;
+    height: 56px;
+    margin: 0;
+    margin-bottom: 40px;
+  }
+  .div-strilka {
+    height: 30px;
+  }
 }
+/* ~~~~~~~~~~~~~~~~~~~~~~~~~
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+           LAPTOP
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~ */
 @media screen and (min-width: 1280px) {
   .container {
     max-width: 1280px;
@@ -327,6 +401,25 @@ a {
   }
   .btn-signup {
     width: 238px;
+  }
+  .hero-container {
+    width: 1080px;
+    height: 600px;
+    padding: 80px 50px 0 50px;
+    display: flex;
+  }
+  .main-text {
+    font-size: 64px;
+    line-height: 4.25rem; /* 106.25% */
+    letter-spacing: -0.16rem;
+  }
+  .hero-text {
+    margin-bottom: 136px;
+  }
+  .hero-photo {
+    margin: 0 0 0 20px;
+    width: 397px;
+    height: 520px;
   }
 }
 @media (max-width: 1279px) {
