@@ -178,6 +178,7 @@ a {
 }
 .icon-star {
   fill: var(--brown);
+  height: 25px;
 }
 .text-reviews {
   color: rgba(255, 255, 255, 0.5);
@@ -192,6 +193,13 @@ a {
   line-height: 18px; /* 112.5% */
   letter-spacing: -0.04rem;
 }
+.hero-photo {
+  margin: 0 auto;
+}
+.hero .container {
+  padding-bottom: 80px;
+}
+
 /* ~~~~~~~~~~~~~~~~~~~~~~~~~
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~
            MENU
