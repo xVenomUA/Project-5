@@ -87,7 +87,7 @@ a {
 }
 .hero-container {
   background-color: var(--grey);
-  width: 335px;
+  width: 100%;
   height: 777px;
   border-radius: 30px;
   padding: 40px 20px 0 20px;
@@ -119,25 +119,29 @@ a {
   height: 44px;
   border-radius: 100px;
   border: 2px solid #1d1d1d;
+  border: none;
 }
 .hero-list {
   display: flex;
   position: relative;
+  width: 104px;
 }
 .hero-items:nth-child(1) {
   z-index: 3;
 }
 .hero-items:nth-child(2) {
-  left: 12%;
+  left: 33px;
   z-index: 2;
 }
 .hero-items:nth-child(3) {
-  left: 24%;
+  left: 66px;
   z-index: 1;
 }
 .hero-block {
   width: 251px;
   height: 84px;
+  display: flex;
+  margin-bottom: 31px;
 }
 .text-happy {
   font-size: 14px;
@@ -154,7 +158,40 @@ a {
   height: 36px;
   margin-top: 48px;
 }
-
+.hero-div-photo {
+  width: 105px;
+}
+.divstars {
+  width: 104px;
+  margin-left: 40px;
+  display: flex;
+}
+.hero-starts {
+  width: 44px;
+  height: 44px;
+  border-radius: 50%;
+  background-color: var(--brown);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-right: 12px;
+}
+.icon-star {
+  fill: var(--brown);
+}
+.text-reviews {
+  color: rgba(255, 255, 255, 0.5);
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 18px; /* 128.571% */
+  letter-spacing: -0.035rem;
+  margin-bottom: 4px;
+}
+.text-five {
+  font-weight: 500;
+  line-height: 18px; /* 112.5% */
+  letter-spacing: -0.04rem;
+}
 /* ~~~~~~~~~~~~~~~~~~~~~~~~~
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~
            MENU
